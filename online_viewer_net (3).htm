@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aumente suas conversões com a Alfa Conversões! Estratégias de marketing digital que geram +287% de ROI em 30 dias.">
+    <meta name="keywords" content="marketing digital, conversões, facebook ads, google ads, criação de sites, alfa conversões, brasileiros nos EUA">
+    <meta name="author" content="Alfa Conversões">
+    <title>Alfa Conversões - Crescimento Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --purple-600: #6A1B9A;
+            --purple-400: #9C27B0;
+            --blue-500: #00BFFF;
+            --gold: #FFD700;
+            --white: #FFFFFF;
+            --gray-200: #f5f5f5;
+            --shadow: rgba(0,0,0,0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--purple-600);
+            padding: 1rem 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav h1 {
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 0.8rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .language-switch {
+            position: fixed;
+            top: 70px;
+            right: 1.5rem;
+            z-index: 1001;
+        }
+
+        .language-switch select {
+            padding: 0.5rem;
+            border-radius: 5px;
+            background: var(--purple-600);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 0;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 5px var(--shadow);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+            text-shadow: 1px 1px 3px var(--shadow);
+        }
+
+        .services {
+            padding: 5rem 0;
+            background: var(--gray-200);
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: var(--purple-600);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px var(--shadow);
+            border: 2px solid var(--gold);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--purple-600);
+            margin-bottom: 1rem;
+        }
+
+        .service-card .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .stats {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-400));
+            color: var(--white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .stat-box {
+            flex: 1 1 250px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-shadow: 1px 1px 3px var(--shadow);
+        }
+
+        .funnel-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .funnel {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .funnel-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            position: relative;
+            animation: fadeIn 1s ease-out 0.7s backwards;
+        }
+
+        .funnel-bar {
+            height: 60px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px var(--shadow);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .funnel-step:nth-child(1) .funnel-bar {
+            width: 100%;
+            background: linear-gradient(90deg, var(--blue-500), var(--purple-400));
+        }
+
+        .funnel-step:nth-child(2) .funnel-bar {
+            width: 70%;
+            background: linear-gradient(90deg, var(--purple-400), var(--gold));
+        }
+
+        .funnel-step:nth-child(3) .funnel-bar {
+            width: 40%;
+            background: linear-gradient(90deg, var(--gold), var(--blue-500));
+        }
+
+        .funnel-label {
+            position: absolute;
+            left: -150px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: right;
+            width: 140px;
+        }
+
+        .funnel-step p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .email-capture {
+            margin-top: 2rem;
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.9s backwards;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .email-capture h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px var(--shadow);
+        }
+
+        .email-capture form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .email-capture input {
+            padding: 0.8rem;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .email-capture button {
+            padding: 0.8rem 1.5rem;
+            background: var(--gold);
+            color: var(--purple-600);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .email-capture button:hover {
+            transform: scale(1.05);
+        }
+
+        .about {
+            padding: 5rem 0;
+            background: var(--white);
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .about h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--purple-600);
+        }
+
+        .about-logo {
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto 1.5rem;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .international-section {
+            padding: 5rem 0;
+            background: var(--gray-200);
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .international-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--purple-600);
+        }
+
+        .international-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .international-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px var(--shadow);
+        }
+
+        .clients {
+            padding: 5rem 0;
+            text-align: center;
+            background: var(--gray-200);
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .clients h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--purple-600);
+        }
+
+        .client-logos {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 100%;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scroll-behavior: smooth;
+        }
+
+        .client-logo {
+            min-width: 180px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .client-logo img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .client-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px var(--shadow);
+        }
+
+        .client-cta {
+            margin-top: 1rem;
+        }
+
+        .testimonial {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            padding: 8rem 0;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .testimonial-content p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+
+        .testimonial-content .author {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: var(--purple-600);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--blue-500), var(--purple-400));
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 5px 15px var(--shadow);
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            color: var(--purple-600);
+            transform: scale(1.05);
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: var(--purple-600);
+            color: var(--white);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px var(--shadow);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .floating-cta:hover {
+            transform: scale(1.15);
+            background: var(--gold);
+        }
+
+        .whatsapp-cta {
+            bottom: 6rem;
+            background: #25D366;
+            margin-bottom: 0.5rem;
+        }
+
+        .floating-schedule-cta {
+            position: fixed;
+            bottom: 11rem;
+            right: 1.5rem;
+            background: linear-gradient(135deg, var(--blue-500), var(--purple-400));
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .floating-schedule-cta:hover {
+            background: var(--gold);
+            color: var(--purple-600);
+            transform: scale(1.05);
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .chat-btn {
+            position: fixed;
+            bottom: 15rem;
+            right: 1.5rem;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px var(--shadow);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .chat-btn:hover {
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .hero h2 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .stat-box { flex: 1 1 50%; }
+            .service-card { padding: 1.5rem; }
+            .funnel { max-width: 400px; }
+            .funnel-label { left: -120px; font-size: 1.1rem; }
+            .floating-schedule-cta { bottom: 10rem; }
+            .whatsapp-cta { bottom: 5rem; }
+            .chat-btn { bottom: 14rem; }
+            .email-capture form { flex-direction: column; align-items: center; }
+            .email-capture input { width: 80%; }
+            .international-section h2 { font-size: 2rem; }
+            .international-card { padding: 1.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            nav .container { 
+                flex-direction: column; 
+                padding: 0.5rem; 
+                align-items: center; 
+            }
+            nav h1 { 
+                font-size: 1.2rem; 
+                margin-bottom: 0.5rem; 
+            }
+            nav a { 
+                margin: 0.3rem 0.5rem; 
+                font-size: 0.9rem; 
+            }
+            .hero { padding: 4rem 0; }
+            .hero h2 { font-size: 1.8rem; }
+            .hero p { font-size: 1rem; }
+            .services h2 { font-size: 1.8rem; }
+            .stat-box { flex: 1 1 100%; padding: 1rem; }
+            .stat-box h3 { font-size: 2rem; }
+            .about-logo { max-width: 200px; }
+            .about-content { flex-direction: column; }
+            .about-text { text-align: center; }
+            .testimonial-content p { font-size: 1.2rem; }
+            .btn { padding: 0.8rem 2rem; font-size: 0.9rem; }
+            .client-logo { min-width: 140px; height: 80px; }
+            .floating-schedule-cta { bottom: 8rem; padding: 0.6rem 1.2rem; font-size: 0.8rem; }
+            .whatsapp-cta { bottom: 4rem; }
+            .chat-btn { bottom: 12rem; }
+            .funnel-label { position: static; transform: none; width: auto; text-align: center; margin-bottom: 0.5rem; font-size: 1rem; }
+            .funnel-bar { height: 50px; }
+            .funnel-step p { font-size: 0.9rem; }
+            .funnel { max-width: 300px; }
+            .email-capture input { width: 90%; margin-bottom: 1rem; }
+            .email-capture button { width: 90%; }
+            .international-section h2 { font-size: 1.5rem; }
+            .international-card { padding: 1rem; max-width: 90%; }
+            .language-switch {
+                top: 110px; /* Ajustado para ficar abaixo da navegação empilhada */
+                right: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero { padding: 3rem 0; }
+            .hero h2 { font-size: 1.5rem; }
+            .hero p { font-size: 0.9rem; }
+            .service-card i { font-size: 2rem; }
+            .service-card { padding: 1rem; }
+            .services h2 { font-size: 1.5rem; }
+            .about h2 { font-size: 1.5rem; }
+            .clients h2 { font-size: 1.5rem; }
+            .client-logo { min-width: 120px; height: 60px; }
+            .floating-cta { width: 40px; height: 40px; }
+            .whatsapp-cta { bottom: 3rem; }
+            .floating-schedule-cta { bottom: 7rem; padding: 0.5rem 1rem; font-size: 0.7rem; }
+            .chat-btn { bottom: 11rem; }
+            .funnel-label { font-size: 0.9rem; }
+            .funnel-bar { height: 40px; }
+            .funnel-step p { font-size: 0.8rem; }
+            .funnel { max-width: 250px; }
+            .international-section h2 { font-size: 1.2rem; }
+            .international-card { padding: 0.8rem; }
+            .language-switch {
+                top: 110px;
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Alfa Conversões</h1>
+            <div>
+                <a href="#hero">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#stats">Resultados</a>
+                <a href="#about">Sobre</a>
+                <a href="#clients">Clientes</a>
+                <a href="#testimonial">Depoimentos</a>
+                <a href="#international">Internacional</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="language-switch">
+        <select onchange="changeLanguage(this.value)">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2>Aumente Suas Conversões em 30 Dias!</h2>
+            <p>Estratégias de marketing digital personalizadas para negócios que querem crescer rápido e dominar o mercado.</p>
+            <div class="cta-container">
+                <a href="#stats" class="btn">Agende Agora e Ganhe Análise Grátis!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Especialista em Facebook Ads</h3>
+                    <p>Campanhas otimizadas que aumentam conversões em até 300% com foco em ROI.</p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Facebook Ads Expert." class="btn" target="_blank">Saiba Mais no WhatsApp</a>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-google"></i>
+                    <h3>Google Ads</h3>
+                    <p>Anúncios que capturam leads qualificados e maximizam resultados.</p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Google Ads." class="btn" target="_blank">Saiba Mais no WhatsApp</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Criação de Sites</h3>
+                    <p>Sites rápidos, otimizados e projetados para converter vendas.</p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Criação de Sites." class="btn" target="_blank">Saiba Mais no WhatsApp</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Google Meu Negócio</h3>
+                    <p>Domine o mercado local com visibilidade e credibilidade online.</p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Google Meu Negócio." class="btn" target="_blank">Saiba Mais no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h3>+287%</h3>
+                <p>ROI Médio dos Clientes</p>
+            </div>
+            <div class="stat-box">
+                <h3>1.2M</h3>
+                <p>Em Tráfego Gerado</p>
+            </div>
+            <div class="stat-box">
+                <h3>94%</h3>
+                <p>Taxa de Satisfação</p>
+            </div>
+            <div class="funnel-container">
+                <div class="funnel">
+                    <div class="funnel-step">
+                        <div class="funnel-label">1.2M</div>
+                        <div class="funnel-bar"></div>
+                        <p>Alcance massivo com anúncios otimizados</p>
+                    </div>
+                    <div class="funnel-step">
+                        <div class="funnel-label">+287%</div>
+                        <div class="funnel-bar"></div>
+                        <p>Conversões que geram resultados reais</p>
+                    </div>
+                    <div class="funnel-step">
+                        <div class="funnel-label">94%</div>
+                        <div class="funnel-bar"></div>
+                        <p>Clientes felizes e resultados consistentes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="email-capture">
+                <h3>Receba Dicas Exclusivas de Conversão!</h3>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#stats" class="btn">Apenas 3 Vagas - Agendar Agora!</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Sobre a Alfa Conversões</h2>
+            <img src="https://via.placeholder.com/300x300?text=Águia+Alfa+Conversões" alt="Logo Alfa Conversões - Águia" class="about-logo">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos a Alfa Conversões, a agência que transforma negócios com estratégias digitais únicas, aumentando conversões em até 300% em 30 dias. Utilizamos ferramentas como Facebook Ads, Google Ads, criação de sites otimizados e Google Meu Negócio para alavancar o crescimento de nossos clientes.</p>
+                    <p>Nossa missão é ser a ponte entre seu negócio e o sucesso digital, trazendo mais clientes e vendas com impacto real. Como uma águia, voamos alto para identificar oportunidades e entregamos resultados que fazem a diferença.</p>
+                    <img src="https://via.placeholder.com/600x400?text=Equipe+Alfa+Conversões" alt="Equipe Alfa Conversões em ação" class="about-team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="international-section" id="international">
+        <div class="container">
+            <h2>Serviços para Brasileiros nos EUA</h2>
+            <div class="international-card">
+                <h3>Expanda seu Negócio nos EUA</h3>
+                <p>Ajude sua empresa a atrair clientes americanos com campanhas em inglês, SEO local e sites otimizados. Resultados comprovados em Miami e Nova York!</p>
+                <a href="https://wa.me/15551234567?text=Hi! I’d like to know more about your services for the US market." class="btn" target="_blank">Saiba Mais no WhatsApp</a>
+                <p>Preços em USD sob consulta.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2>Clientes que Confiam em Nós</h2>
+            <div class="client-logos">
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x50?text=TechStart" alt="Logo TechStart">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x50?text=InovaCorp" alt="Logo InovaCorp">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x50?text=AlphaBank" alt="Logo AlphaBank">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x50?text=EcoVibe" alt="Logo EcoVibe">
+                </div>
+            </div>
+            <div class="client-cta">
+                <a href="#stats" class="btn">Descubra Como Podemos Ajudar Sua Empresa!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <p>"A Alfa Conversões triplicou nossas vendas em menos de 2 meses! Resultados incríveis."</p>
+                <p class="author">João Silva, CEO TechStart</p>
+                <p>"Com a estratégia deles, aumentamos nosso tráfego em 150% em 3 semanas."</p>
+                <p class="author">Maria Oliveira, InovaCorp</p>
+                <h3>Case de Sucesso</h3>
+                <p>Ajudamos a TechStart a alcançar +300% de conversões em 30 dias com uma campanha de Facebook Ads otimizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Alfa Conversões</h3>
+            <p>Transformamos negócios com estratégias digitais eficazes.</p>
+            <p>Contato: <a href="mailto:contato@alfaconversoes.com">contato@alfaconversoes.com</a> | (11) 99999-9999</p>
+            <p>Redes Sociais: <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <a href="#hero" class="floating-cta">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <a href="https://wa.me/5511999999999" class="floating-cta whatsapp-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#stats" class="floating-schedule-cta">Apenas 3 Vagas - Agendar Agora!</a>
+    <a href="#" class="chat-btn" onclick="alert('Chat ao vivo simulado! Entre em contato: (11) 99999-9999')">💬</a>
+
+    <script>
+        function changeLanguage(lang) {
+            const heroH2 = document.querySelector('.hero h2');
+            const heroP = document.querySelector('.hero p');
+            const heroBtn = document.querySelector('.hero .btn');
+            const scheduleCta = document.querySelector('.floating-schedule-cta');
+            const servicesH2 = document.querySelector('.services h2');
+            const fbAdsH3 = document.querySelector('.service-card:nth-child(1) h3');
+            const fbAdsP = document.querySelector('.service-card:nth-child(1) p');
+            const fbAdsBtn = document.querySelector('.service-card:nth-child(1) .btn');
+            const googleAdsH3 = document.querySelector('.service-card:nth-child(2) h3');
+            const googleAdsP = document.querySelector('.service-card:nth-child(2) p');
+            const googleAdsBtn = document.querySelector('.service-card:nth-child(2) .btn');
+            const siteH3 = document.querySelector('.service-card:nth-child(3) h3');
+            const siteP = document.querySelector('.service-card:nth-child(3) p');
+            const siteBtn = document.querySelector('.service-card:nth-child(3) .btn');
+            const gmbH3 = document.querySelector('.service-card:nth-child(4) h3');
+            const gmbP = document.querySelector('.service-card:nth-child(4) p');
+            const gmbBtn = document.querySelector('.service-card:nth-child(4) .btn');
+            const statsCta = document.querySelector('.stats .cta-container .btn');
+            const emailCaptureH3 = document.querySelector('.email-capture h3');
+            const emailBtn = document.querySelector('.email-capture button');
+            const statBoxP1 = document.querySelector('.stat-box:nth-child(1) p');
+            const statBoxP2 = document.querySelector('.stat-box:nth-child(2) p');
+            const statBoxP3 = document.querySelector('.stat-box:nth-child(3) p');
+            const funnelStepP1 = document.querySelector('.funnel-step:nth-child(1) p');
+            const funnelStepP2 = document.querySelector('.funnel-step:nth-child(2) p');
+            const funnelStepP3 = document.querySelector('.funnel-step:nth-child(3) p');
+            const aboutH2 = document.querySelector('.about h2');
+            const aboutP1 = document.querySelector('.about-text p:nth-child(1)');
+            const aboutP2 = document.querySelector('.about-text p:nth-child(2)');
+            const internationalH2 = document.querySelector('.international-section h2');
+            const internationalCardH3 = document.querySelector('.international-card h3');
+            const internationalCardP = document.querySelector('.international-card p');
+            const internationalCardBtn = document.querySelector('.international-card .btn');
+            const internationalCardPrice = document.querySelector('.international-card p:last-child');
+            const clientsH2 = document.querySelector('.clients h2');
+            const clientsCta = document.querySelector('.client-cta .btn');
+            const testimonialP1 = document.querySelector('.testimonial-content p:nth-child(1)');
+            const testimonialP2 = document.querySelector('.testimonial-content p:nth-child(3)');
+            const testimonialH3 = document.querySelector('.testimonial-content h3');
+            const testimonialCaseP = document.querySelector('.testimonial-content p:nth-child(5)');
+            const footerH3 = document.querySelector('footer h3');
+            const footerP1 = document.querySelector('footer p:nth-child(2)');
+            const footerP2 = document.querySelector('footer p:nth-child(3)');
+            const footerP3 = document.querySelector('footer p:nth-child(4)');
+            const navLinks = document.querySelectorAll('nav a');
+            const navLinkTexts = ['Home', 'Services', 'Results', 'About', 'Clients', 'Testimonials', 'International'];
+            const ptNavLinks = ['Home', 'Serviços', 'Resultados', 'Sobre', 'Clientes', 'Depoimentos', 'Internacional'];
+
+            if (lang === "en") {
+                heroH2.textContent = "Increase Your Conversions in 30 Days!";
+                heroP.textContent = "Tailored digital marketing strategies for businesses aiming to grow fast and dominate the market.";
+                heroBtn.textContent = "Schedule Now and Get a Free Analysis!";
+                scheduleCta.textContent = "Only 3 Slots - Schedule Now!";
+                servicesH2.textContent = "Our Services";
+                fbAdsH3.textContent = "Facebook Ads Expert";
+                fbAdsP.textContent = "Optimized campaigns that increase conversions by up to 300% with a focus on ROI.";
+                fbAdsBtn.href = "https://wa.me/15551234567?text=Hi! I’d like to know more about your Facebook Ads Expert plans.";
+                fbAdsBtn.textContent = "Learn More on WhatsApp";
+                googleAdsH3.textContent = "Google Ads";
+                googleAdsP.textContent = "Ads that capture qualified leads and maximize results.";
+                googleAdsBtn.href = "https://wa.me/15551234567?text=Hi! I’d like to know more about your Google Ads plans.";
+                googleAdsBtn.textContent = "Learn More on WhatsApp";
+                siteH3.textContent = "Website Creation";
+                siteP.textContent = "Fast, optimized websites designed to convert sales.";
+                siteBtn.href = "https://wa.me/15551234567?text=Hi! I’d like to know more about your Website Creation plans.";
+                siteBtn.textContent = "Learn More on WhatsApp";
+                gmbH3.textContent = "Google My Business";
+                gmbP.textContent = "Dominate the local market with online visibility and credibility.";
+                gmbBtn.href = "https://wa.me/15551234567?text=Hi! I’d like to know more about your Google My Business plans.";
+                gmbBtn.textContent = "Learn More on WhatsApp";
+                statsCta.textContent = "Only 3 Slots - Schedule Now!";
+                emailCaptureH3.textContent = "Receive Exclusive Conversion Tips!";
+                emailBtn.textContent = "Send";
+                statBoxP1.textContent = "Average Client ROI";
+                statBoxP2.textContent = "Traffic Generated";
+                statBoxP3.textContent = "Satisfaction Rate";
+                funnelStepP1.textContent = "Massive reach with optimized ads";
+                funnelStepP2.textContent = "Conversions that deliver real results";
+                funnelStepP3.textContent = "Happy clients and consistent results";
+                aboutH2.textContent = "About Alfa Conversions";
+                aboutP1.textContent = "We are Alfa Conversions, the agency that transforms businesses with unique digital strategies, increasing conversions by up to 300% in 30 days. We use tools like Facebook Ads, Google Ads, optimized website creation, and Google My Business to boost our clients' growth.";
+                aboutP2.textContent = "Our mission is to be the bridge between your business and digital success, bringing more customers and sales with real impact. Like an eagle, we soar high to identify opportunities and deliver results that make a difference.";
+                internationalH2.textContent = "Services for Brazilians in the USA";
+                internationalCardH3.textContent = "Expand Your Business in the USA";
+                internationalCardP.textContent = "Help your company attract American customers with English campaigns, local SEO, and optimized websites. Proven results in Miami and New York!";
+                internationalCardBtn.textContent = "Learn More on WhatsApp";
+                internationalCardPrice.textContent = "Prices in USD upon request.";
+                clientsH2.textContent = "Clients Who Trust Us";
+                clientsCta.textContent = "Discover How We Can Help Your Business!";
+                testimonialP1.textContent = "Alfa Conversions tripled our sales in less than 2 months! Incredible results.";
+                testimonialP2.textContent = "With their strategy, we increased our traffic by 150% in 3 weeks.";
+                testimonialH3.textContent = "Success Case";
+                testimonialCaseP.textContent = "We helped TechStart achieve +300% conversions in 30 days with an optimized Facebook Ads campaign.";
+                footerH3.textContent = "Alfa Conversions";
+                footerP1.textContent = "We transform businesses with effective digital strategies.";
+                footerP2.textContent = "Contact: <a href=\"mailto:contato@alfaconversoes.com\">contato@alfaconversoes.com</a> | +1 (555) 123-4567";
+                footerP3.textContent = "Social Media: <a href=\"#\">Instagram</a> | <a href=\"#\">LinkedIn</a>";
+                navLinks.forEach((link, index) => link.textContent = navLinkTexts[index]);
+            } else {
+                heroH2.textContent = "Aumente Suas Conversões em 30 Dias!";
+                heroP.textContent = "Estratégias de marketing digital personalizadas para negócios que querem crescer rápido e dominar o mercado.";
+                heroBtn.textContent = "Agende Agora e Ganhe Análise Grátis!";
+                scheduleCta.textContent = "Apenas 3 Vagas - Agendar Agora!";
+                servicesH2.textContent = "Nossos Serviços";
+                fbAdsH3.textContent = "Especialista em Facebook Ads";
+                fbAdsP.textContent = "Campanhas otimizadas que aumentam conversões em até 300% com foco em ROI.";
+                fbAdsBtn.href = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Facebook Ads Expert.";
+                fbAdsBtn.textContent = "Saiba Mais no WhatsApp";
+                googleAdsH3.textContent = "Google Ads";
+                googleAdsP.textContent = "Anúncios que capturam leads qualificados e maximizam resultados.";
+                googleAdsBtn.href = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Google Ads.";
+                googleAdsBtn.textContent = "Saiba Mais no WhatsApp";
+                siteH3.textContent = "Criação de Sites";
+                siteP.textContent = "Sites rápidos, otimizados e projetados para converter vendas.";
+                siteBtn.href = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Criação de Sites.";
+                siteBtn.textContent = "Saiba Mais no WhatsApp";
+                gmbH3.textContent = "Google Meu Negócio";
+                gmbP.textContent = "Domine o mercado local com visibilidade e credibilidade online.";
+                gmbBtn.href = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de Google Meu Negócio.";
+                gmbBtn.textContent = "Saiba Mais no WhatsApp";
+                statsCta.textContent = "Apenas 3 Vagas - Agendar Agora!";
+                emailCaptureH3.textContent = "Receba Dicas Exclusivas de Conversão!";
+                emailBtn.textContent = "Enviar";
+                statBoxP1.textContent = "ROI Médio dos Clientes";
+                statBoxP2.textContent = "Em Tráfego Gerado";
+                statBoxP3.textContent = "Taxa de Satisfação";
+                funnelStepP1.textContent = "Alcance massivo com anúncios otimizados";
+                funnelStepP2.textContent = "Conversões que geram resultados reais";
+                funnelStepP3.textContent = "Clientes felizes e resultados consistentes";
+                aboutH2.textContent = "Sobre a Alfa Conversões";
+                aboutP1.textContent = "Somos a Alfa Conversões, a agência que transforma negócios com estratégias digitais únicas, aumentando conversões em até 300% em 30 dias. Utilizamos ferramentas como Facebook Ads, Google Ads, criação de sites otimizados e Google Meu Negócio para alavancar o crescimento de nossos clientes.";
+                aboutP2.textContent = "Nossa missão é ser a ponte entre seu negócio e o sucesso digital, trazendo mais clientes e vendas com impacto real. Como uma águia, voamos alto para identificar oportunidades e entregamos resultados que fazem a diferença.";
+                internationalH2.textContent = "Serviços para Brasileiros nos EUA";
+                internationalCardH3.textContent = "Expanda seu Negócio nos EUA";
+                internationalCardP.textContent = "Ajude sua empresa a atrair clientes americanos com campanhas em inglês, SEO local e sites otimizados. Resultados comprovados em Miami e Nova York!";
+                internationalCardBtn.textContent = "Saiba Mais no WhatsApp";
+                internationalCardPrice.textContent = "Preços em USD sob consulta.";
+                clientsH2.textContent = "Clientes que Confiam em Nós";
+                clientsCta.textContent = "Descubra Como Podemos Ajudar Sua Empresa!";
+                testimonialP1.textContent = "A Alfa Conversões triplicou nossas vendas em menos de 2 meses! Resultados incríveis.";
+                testimonialP2.textContent = "Com a estratégia deles, aumentamos nosso tráfego em 150% em 3 semanas.";
+                testimonialH3.textContent = "Case de Sucesso";
+                testimonialCaseP.textContent = "Ajudamos a TechStart a alcançar +300% de conversões em 30 dias com uma campanha de Facebook Ads otimizada.";
+                footerH3.textContent = "Alfa Conversões";
+                footerP1.textContent = "Transformamos negócios com estratégias digitais eficazes.";
+                footerP2.textContent = "Contato: <a href=\"mailto:contato@alfaconversoes.com\">contato@alfaconversoes.com</a> | (11) 99999-9999";
+                footerP3.textContent = "Redes Sociais: <a href=\"#\">Instagram</a> | <a href=\"#\">LinkedIn</a>";
+                navLinks.forEach((link, index) => link.textContent = ptNavLinks[index]);
+            }
+        }
+    </script>
+</body>
+</html>
